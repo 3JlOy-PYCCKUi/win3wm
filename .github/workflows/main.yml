@@ -1,15 +1,7 @@
 name: WinWM
 
 
-on: 
-    push:
-        paths:
-            - 'ForceResize/**'
-            - 'guitest/**'
-            - 'x86ipc/**'
-    pull_request:
-    workflow_dispatch:
-
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
